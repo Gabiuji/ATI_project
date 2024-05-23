@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormCadastro">
+
+
+    <TextView
+        android:id="@+id/title_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastre-se"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_margin="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <View
+        android:id="@+id/containerComponents_cadastro"
+        style="@style/containerComponents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_cadastro"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLayoutNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/containerComponents_cadastro"
+        app:layout_constraintStart_toStartOf="@id/containerComponents_cadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents_cadastro"
+        app:hintAnimationEnabled="true"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/red"
+        >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_nome"
+        style="@style/EditText"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/containerComponents_cadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents_cadastro"
+        app:layout_constraintTop_toTopOf="@id/containerComponents_cadastro"
+        android:hint="Nome de usuário"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtLayoutNome"
+        app:layout_constraintStart_toStartOf="@id/containerComponents_cadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents_cadastro"
+        app:boxStrokeColor="@color/dark_cyan_green"
+        app:hintAnimationEnabled="true"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/red"
+        >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_email"
+        style="@style/EditText"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/containerComponents_cadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents_cadastro"
+        app:layout_constraintTop_toBottomOf="@id/txtLayoutNome"
+        android:layout_marginTop="-5dp"
+        android:drawableRight="@drawable/email"
+        android:hint="E-mail"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLayoutSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/containerComponents_cadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents_cadastro"
+        app:layout_constraintTop_toBottomOf="@id/txtLayoutEmail"
+        app:hintAnimationEnabled="true"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/red"
+        app:passwordToggleEnabled="true"
+        >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_senha"
+        style="@style/EditText"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/containerComponents_cadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents_cadastro"
+        app:layout_constraintTop_toBottomOf="@id/txtLayoutEmail"
+        android:layout_marginTop="-5dp"
+        android:hint="Senha"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cadastrar"
+        style="@style/button"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents_cadastro"
+        android:text="Cadastrar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

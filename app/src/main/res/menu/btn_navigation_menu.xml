@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/pag_1"
+        android:title="@string/menu_pagInicial"
+        android:icon="@drawable/ic_news"
+        />
+    <item
+        android:id="@+id/pag_2"
+        android:title="@string/menu_cultura"
+        android:icon="@drawable/ic_cultura"
+        />
+    <item
+        android:id="@+id/pag_3"
+        android:title="Tradutor"
+        android:icon="@drawable/icon_translate"
+        />
+    <item
+        android:id="@+id/pag_4"
+        android:title="Jogo"
+        android:icon="@drawable/ic_md_game"
+        />
+    <item
+        android:id="@+id/pag_5"
+        android:title="@string/menu_config"
+        android:icon="@drawable/ic_config"
+        />
+
+</menu>

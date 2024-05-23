@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/pag_1">
+
+    <fragment
+        android:id="@+id/pag_1"
+        android:name="com.example.atiproject.fragments.inicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/pag_2"
+        android:name="com.example.atiproject.fragments.culturaFragment"
+        android:label="fragment_cultura"
+        tools:layout="@layout/fragment_cultura" />
+    <fragment
+        android:id="@+id/pag_4"
+        android:name="com.example.atiproject.fragments.mdJogoFragment"
+        android:label="fragment_md_jogo"
+        tools:layout="@layout/fragment_md_jogo" />
+    <fragment
+        android:id="@+id/pag_5"
+        android:name="com.example.atiproject.fragments.ConfigFragment"
+        android:label="fragment_config"
+        tools:layout="@layout/fragment_config" />
+    <fragment
+        android:id="@+id/pag_3"
+        android:name="com.example.atiproject.fragments.translateFragment"
+        android:label="fragment_translate"
+        tools:layout="@layout/fragment_translate" />
+</navigation>
